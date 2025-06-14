@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
+}
+
+/* College Header Styles */
+#clgName {
+    height: 60px;
+    background-color: #003060;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+#mainHeading {
+    color: white;
+    margin-left: 10px;
+    padding-left: 1em;
+    flex: 1;
+}
+
+#clgLogo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+#clgLogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Body and Background Animation */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    /* text-shadow: 2px 2px 4px rgba(254, 252, 252, 0.7); */
+    animation: changeBackground 8s infinite;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url("/images/clgImg1.jpg");
+    }
+    25% {
+        background-image: url("/images/clgImg2.jpg");
+    }
+    50% {
+        background-image: url("/images/clgImg3.png");
+    }
+    75% {
+        background-image: url("/images/clgImg4.png");
+    }
+    100% {
+        background-image: url("/images/clgImg5.png");
+    }
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+    text-align: center;
+
+    margin-top: 70px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #003060;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color: #055c9d;
+    text-transform: uppercase;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-login,
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    background-color: #007bff;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.btn-register {
+    background-color: #28a745;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-register:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input,
+    select {
+        font-size: 12px;
+    }
+
+    .btn-login,
+    .btn-register {
+        font-size: 14px;
+    }
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Reserve space for the eye icon */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password img {
+    width: 30px;
+    height: 25px;
+    /* opacity: 0.6; */
+    transition: opacity 0.3s ease;
+}
+
+.toggle-password img:hover {
+    opacity: 1;
+}

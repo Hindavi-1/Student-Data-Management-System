@@ -1,0 +1,149 @@
+/* General Styles for Courses & Workshops Section */
+.courses-workshops-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.courses-workshops-container h1 {
+    font-size: 2.5rem;
+    color: #003060; /* Navy Blue */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.courses-workshops-container .btn-primary {
+    background-color: #003060; /* Navy Blue */
+    border: none;
+}
+
+.courses-workshops-container .btn-primary:hover {
+    background-color: #055c9d; /* Blue Grotto */
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #003060; /* Navy Blue */
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.table td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.table-actions .btn-sm {
+    padding: 5px 10px;
+}
+
+.no-data-message {
+    text-align: center;
+    color: #555555;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* Modal Header Styling */
+.modal-header {
+    background-color: #003060; /* Navy Blue */
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.form-control, .form-select {
+    border: 1px solid #68bbe3; /* Baby Blue */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #055c9d; /* Blue Grotto */
+    box-shadow: 0 0 5px rgba(5, 92, 157, 0.5);
+}
+
+/* Save Button Styling */
+.btn-success {
+    background-color: #055c9d; /* Blue Grotto */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #003060; /* Navy Blue */
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+.modal .form-label {
+    font-weight: bold;
+    color: #003060;
+}
+
+.modal .form-control, .modal .form-select {
+    border: 1px solid #68bbe3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.modal .form-control:focus, .modal .form-select:focus {
+    border-color: #0e86d4;
+    box-shadow: 0 0 5px rgba(14, 134, 212, 0.5);
+}
+
+.modal .btn-primary {
+    background-color: #0e86d4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal .btn-primary:hover {
+    background-color: #005b96;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

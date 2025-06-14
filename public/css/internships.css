@@ -1,0 +1,124 @@
+/* Custom Styles */
+.table-hover tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.badge {
+    font-size: 0.85rem;
+}
+
+.btn-sm i {
+    margin-right: 5px;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+/* Styling based on your color palette */
+.modal-header-custom {
+    background-color: #003060; /* Replace with your palette's primary color */
+    color: #ECF0F1; /* Replace with your palette's light text color */
+}
+
+.modal-body-custom {
+    background-color: #ECF0F1; /* Replace with your palette's light background color */
+    color: #0e86d4; /* Replace with your palette's primary text color */
+}
+
+.modal-footer-custom {
+    background-color: #003060; /* Replace with a secondary color from your palette */
+}
+
+.btn-close-custom {
+    background-color: #e64837; /* Replace with your palette's danger color */
+    color: #ECF0F1;
+    border: none;
+}
+
+.btn-submit-custom {
+    background-color: #17b057; /* Replace with your palette's success color */
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-submit-custom:hover {
+    background-color: #2ECC71; /* Replace with a hover variant of the success color */
+}
+
+.form-label {
+    font-weight: bold;
+    color: #34495E; /* Replace with a darker shade for labels */
+}
+
+.form-control, .form-select {
+    border: 1px solid #BDC3C7; /* Replace with a neutral border color */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2980B9; /* Replace with your palette's focus border color */
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Slight glow effect */
+}
+
+
+
+
+
+
+
+/* Add custom table styling */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table-dark th {
+    background-color: #68bbe3;
+    color: rgb(26, 25, 25);
+}
+
+.table-dark td {
+    color: #ccc;
+}
+
+/* Button Styles */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    margin-right: 5px;
+}
+
+.delete-btn {
+    margin-left: 5px;
+}
+
+.btn-warning i, .btn-danger i {
+    margin-right: 5px;
+}

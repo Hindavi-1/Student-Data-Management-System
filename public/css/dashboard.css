@@ -1,0 +1,150 @@
+/* Dashboard CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: rgba(254, 250, 250, 0.8);
+}
+
+.container-fluid {
+    height: 100vh; /* Full height of viewport */
+    display: flex; /* Flexbox layout */
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #003060; /* Navy Blue */
+    color: white;
+    padding: 20px;
+    width: 20%; /* Sidebar takes 20% of the width */
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #68bbe3; /* Baby Blue */
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #68bbe3; /* Baby Blue */
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    background-color: #0e86d4; /* Blue Grotto */
+    color: white;
+}
+
+.nav-link:hover i {
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1; /* Fill remaining space */
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    color: #003060; /* Navy Blue */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    color: #055c9d; /* Blue */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    color: #003060; /* Navy Blue */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #055c9d; /* Blue */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.no-data-message {
+    color: #555;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.nav-link.active {
+    background-color: #0e86d4; /* Match hover color */
+    color: white;
+}
+
+
+
+
+/* Logout Button Styles */
+.logout-container {
+    margin-top: auto; /* Push to the bottom */
+    padding-top: 20px;
+    border-top: 1px solid #68bbe3; /* Separator line */
+}
+
+.btn-logout {
+    background-color: #68bbe3; /* Baby Blue */
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #0e86d4; /* Blue Grotto */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-logout i {
+    margin-right: 8px;
+}
